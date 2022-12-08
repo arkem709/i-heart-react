@@ -1,5 +1,5 @@
-import HeartLogo from '../assets/heart.svg';
-import Heart from './Heart';
+// import Heart from './Heart';
+import CandyColoredHeart from './CandyColoredHeart';
 
 const messages = [
     'cool cud',
@@ -27,8 +27,8 @@ const messages = [
 const HeartsList = () => {
     return (
         <div className='hearts-container'>
-            {messages.map((message) => (
-                <Heart msg={message} />
+            {messages.map((message, index) => (
+                <CandyColoredHeart key={index} msg={message} />
             ))}
         </div>
     );
